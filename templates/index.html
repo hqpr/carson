@@ -2,8 +2,14 @@
 {% block content %}
 
     <div class="home-slider">
-
+        <div id="slider" class="nivoSlider">
+            <img src="{{ MEDIA_URL }}images/slider/toystory.jpg" data-thumb="images/toystory.jpg" alt="" />
+            {#                <a href="http://dev7studios.com"><img src="{{ MEDIA_URL }}images/slider/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" /></a>#}
+            <img src="{{ MEDIA_URL }}images/slider/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+            <img src="{{ MEDIA_URL }}images/slider/nemo.jpg" data-thumb="images/nemo.jpg" alt="" />
+        </div>
     </div>
+    <div class="clearfix"></div>
 
     <div class="container">
         <div class="row">
@@ -24,7 +30,8 @@
                 {% for product in data %}
                     <div class="col-lg-3">
                         <img src="{{ MEDIA_URL }}{{ product.photo }}" alt="" width="185" height="185"/>
-                        <p>{{ product.title }}</p>
+                        <p><a href="">{{ product.title }}</a></p>
+                        <p>{{ product.description|slice:"300" }}</p>
                     </div>
                 {% endfor %}
             </div>
