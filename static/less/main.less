@@ -2,11 +2,24 @@
 @grey: #F4F4F4;
 @blue: #31669A;
 @white: #fff;
+@title-black: #313131;
+
+html,
+body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -300px;
+  padding: 0 0 300px;
+}
 
 a {
   color: @blue;
   text-decoration: underline;
-  
+
   &:hover{
     text-decoration: none;
   }
@@ -26,7 +39,7 @@ a {
       margin: 0;
       padding: 0;
       list-style-type: none;
-    
+
     li{
       display: inline-block;
     }
@@ -34,29 +47,6 @@ a {
   a{
     color: @white;
   }
-  .nav{
-    li{
-      a{
-        &:hover{
-          color: @grey;
-          background: @blue;
-        }
-      }
-    }
-  }
-
-  .dropdown-menu>li>a{
-    background: @blue;
-  }
-
-  .navbar-nav>li>.dropdown-menu {
-    color: @blue;
-  }
-
-  ul>.dropdown-menu{
-    background: @blue;
-  }
-
 }
 
 .home-slider{
@@ -81,4 +71,38 @@ a {
   background: @grey;
   height: 300px;
   border-top: 2px solid #31669A;
+
+  .footer_title{
+    color: @title-black;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    a{
+      text-decoration: none;
+      color: @title-black;
+
+      &:hover{
+        color: @blue;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer_text{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    a{
+      text-decoration: none;
+      color: @title-black;
+
+      &:hover{
+        color: @blue;
+      }
+    }
+  }
+
+  hr{ display: block; height: 1px;
+    border: 0; border-top: 1px solid @blue;
+    margin: 1em 0; padding: 0; }
 }

@@ -4,11 +4,8 @@ from carson import views
 from django.conf import settings
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'carson.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
     url(r'^$', views.home, name='home'),
+    url(r'^product/(\d+)/$', views.product,),
     url(r'^admin/', include(admin.site.urls)),
 )
 
