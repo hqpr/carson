@@ -31,7 +31,7 @@
                 {% for product in data %}
                     <div class="col-lg-3">
                         <img src="{{ MEDIA_URL }}{{ product.photo }}" alt="" width="185" height="185"/>
-                        <p><a href="/product/{{ product.id }}/">{{ product.title }}</a></p>
+                        <p><a href="{% url 'product' product.id %}">{{ product.title }}</a></p>
                         <p>{{ product.description|slice:"300" }}</p>
                     </div>
                 {% endfor %}

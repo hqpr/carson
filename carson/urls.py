@@ -5,7 +5,7 @@ from django.conf import settings
 
 urlpatterns = patterns('',
     url(r'^$', views.home, name='home'),
-    url(r'^product/(\d+)/$', views.product,),
+    url(r'^product/(\d+)/$', views.product, name='product'),
     url(r'^admin/', include(admin.site.urls)),
 )
 
