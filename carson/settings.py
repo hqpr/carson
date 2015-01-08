@@ -58,8 +58,12 @@ WSGI_APPLICATION = 'carson.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'carson_db',
+        'USER': 'postgres',
+        'PASSWORD': '123',
+        'HOST': 'localhost'
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
