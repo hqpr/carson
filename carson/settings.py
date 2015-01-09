@@ -62,11 +62,13 @@ DATABASES = {
         'NAME': 'carson_db',
         'USER': 'postgres',
         'PASSWORD': '123',
-        'HOST': 'postgres://uvlpcodeuiqqig:GC8uaOOwQ7ofU7AvWgmOLSazcS@ec2-107-20-166-127.compute-1.amazonaws.com:5432/d7vb6onltfak2e'
+        # 'HOST': 'localhost'
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
+DATABASE_URL = 'postgres://uvlpcodeuiqqig:GC8uaOOwQ7ofU7AvWgmOLSazcS@ec2-107-20-166-127.compute-1.amazonaws.com:5432/d7vb6onltfak2e'
+HEROKU_POSTGRESQL_COLOR_URL = 'postgres://uvlpcodeuiqqig:GC8uaOOwQ7ofU7AvWgmOLSazcS@ec2-107-20-166-127.compute-1.amazonaws.com:5432/d7vb6onltfak2e'
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
