@@ -62,7 +62,7 @@ DATABASES = {
         'NAME': 'carson_db',
         'USER': 'postgres',
         'PASSWORD': '123',
-        'HOST': 'localhost'
+        'HOST': 'postgres://uvlpcodeuiqqig:GC8uaOOwQ7ofU7AvWgmOLSazcS@ec2-107-20-166-127.compute-1.amazonaws.com:5432/d7vb6onltfak2e'
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
