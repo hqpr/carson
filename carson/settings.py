@@ -12,8 +12,12 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 
 import dj_database_url
-DATABASES['default'] = dj_database_url.config()
 
+
+DATABASES = {'default': dj_database_url.config()}
+
+DATABASE_URL = 'postgres://uvlpcodeuiqqig:GC8uaOOwQ7ofU7AvWgmOLSazcS@ec2-107-20-166-127.compute-1.amazonaws.com:5432/d7vb6onltfak2e'
+HEROKU_POSTGRESQL_COLOR_URL = 'postgres://uvlpcodeuiqqig:GC8uaOOwQ7ofU7AvWgmOLSazcS@ec2-107-20-166-127.compute-1.amazonaws.com:5432/d7vb6onltfak2e'
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -72,8 +76,6 @@ DATABASES = {
     }
 }
 
-DATABASE_URL = 'postgres://uvlpcodeuiqqig:GC8uaOOwQ7ofU7AvWgmOLSazcS@ec2-107-20-166-127.compute-1.amazonaws.com:5432/d7vb6onltfak2e'
-HEROKU_POSTGRESQL_COLOR_URL = 'postgres://uvlpcodeuiqqig:GC8uaOOwQ7ofU7AvWgmOLSazcS@ec2-107-20-166-127.compute-1.amazonaws.com:5432/d7vb6onltfak2e'
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
