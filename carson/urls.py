@@ -7,7 +7,6 @@ urlpatterns = patterns('',
     url(r'^$', views.home, name='home'),
     url(r'^product/(\d+)/$', views.product, name='product'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^cs/', views.create_superuser, name='cs')
 )
 
 
