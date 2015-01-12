@@ -14,8 +14,7 @@ import os
 import dj_database_url
 
 
-DATABASE_URL = 'postgres://uvlpcodeuiqqig:GC8uaOOwQ7ofU7AvWgmOLSazcS@ec2-107-20-166-127.compute-1.amazonaws.com:5432/d7vb6onltfak2e'
-DATABASES = {'default': dj_database_url.parse(DATABASE_URL)}
+DATABASES = {'default' : dj_database_url.config() }
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
