@@ -21,5 +21,5 @@ def product(request, id):
     
     
 def create_superuser(request):
-    User.objects.create_user('admin', 'adubnyak@gmail.com', 1)
+    User.objects.create_superuser('admin1', 'adubnyak@gmail.com', 1)
     return None
